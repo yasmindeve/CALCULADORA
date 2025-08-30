@@ -1,0 +1,63 @@
+/* Estilo general */
+body {
+  background-color: #1e1e1e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Contenedor calculadora */
+.calculator {
+  background-color: #2d2d30;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px #000;
+  width: 320px;
+}
+
+/* Pantalla */
+.display input {
+  width: 100%;
+  height: 60px;
+  font-size: 28px;
+  text-align: right;
+  padding: 10px;
+  border: none;
+  background-color: #1e1e1e;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Botones */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  padding: 20px;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #3e3e42;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background-color: #57575b;
+}
+
+button:active {
+  background-color: #2e2e2e;
+}
+
+.zero {
+  grid-column: span 2;
+}
